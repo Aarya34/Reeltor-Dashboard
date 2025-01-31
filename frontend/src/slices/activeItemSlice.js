@@ -5,6 +5,7 @@ const initialState = {
 };
 
 const activeItemSlice = createSlice({
+    // slice for setting active button in sidebar
     name: 'activeItem',
     initialState,
     reducers: {

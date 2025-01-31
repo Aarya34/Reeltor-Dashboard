@@ -1,4 +1,5 @@
 const propertyListings = [
+    //sata to be displayed in the property listings
     {
       
       name: 'Equestirian Family Home',
@@ -11,7 +12,7 @@ const propertyListings = [
         numSqft: 2000,
       rating: 4.5,
       numBidders: 12,
-      featured : true,
+      featured : false,
         sponsored : false,
     },
         {

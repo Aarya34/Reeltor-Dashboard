@@ -6,7 +6,8 @@ import propertyListings from "../data/propertyListingsData";
 
 const PropertyCard = ({ property }) => {
   return (
-    <div className="relative rounded-lg shadow-sm p-4 bg-white">
+    // Create a card for each property
+    <div className="relative rounded-lg shadow-sm p-4 bg-white"> 
       <img src={property.image} alt={property.name} className="w-55 h-50 object-cover rounded-md" />
       {property.featured && (
         <Badge className="absolute top-6 left-6 bg-purple-500 text-white">
@@ -41,10 +42,12 @@ const PropertyCard = ({ property }) => {
 
 const PropertyListingsScreen = () => {
   return (
+    // Display a list of properties
     <div className="container mx-auto px-4 justify-items-start">
-  <h2 className="text-2xl font-bold mt-18 mb-6">Discover popular properties</h2>
+  <h2 className="text-2xl font-bold mt-5 mb-6">Discover popular properties</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-start">
     {propertyListings.map((property, index) => (
+        
       <PropertyCard key={index} property={property} />
     ))}
   </div>

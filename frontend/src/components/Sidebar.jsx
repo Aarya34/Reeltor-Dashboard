@@ -8,9 +8,9 @@ import "tailwindcss";
 const SidebarContext = createContext()
 
 export default function Sidebar({ children }) {
-//   const [expanded, setExpanded] = useState(true)
 
 return (
+  // Sidebar component is rendered here
   <aside className="h-screen fixed top-0 left-0 transition-all w-20">
     <nav className="h-full flex flex-col">
       <div className="p-4 pb-2 flex justify-between items-center mb-15">
@@ -22,30 +22,15 @@ return (
       </div>
 
       <ul className="flex-1 px-3">{children}</ul>
-
-      <div className="border-t flex p-3">
-        <img
-          src="https://ui-avatars.com/api/?background=c7d2fe&color=3730a3&bold=true"
-          alt="User"
-          className="w-10 h-10 rounded-md"
-        />
-        <div className="flex justify-between items-center ml-3">
-          <div className="leading-4">
-            <h4 className="font-semibold">John Doe</h4>
-            <span className="text-xs text-gray-600">johndoe@gmail.com</span>
-          </div>
-          <MoreVertical size={20} />
-        </div>
-      </div>
     </nav>
   </aside>
 );
 }
 
 export function SidebarItem({ icon, text, active, alert }) {
+  // Items for each sidebar item
   const activeItem = useSelector((state) => state.activeItem.activeItem);
   const dispatch = useDispatch();
-//   const { expanded } = useContext(SidebarContext)
 
 return (
   <Link to={`/${text}`}>

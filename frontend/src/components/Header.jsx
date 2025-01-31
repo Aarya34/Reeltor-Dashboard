@@ -1,8 +1,11 @@
 import React from 'react';
 import { Bell } from 'lucide-react';
+import ThemeSwitcher from './ThemeSwitcher';
 
 const Header = () => {
+    // Header component is rendered here
   return (
+    
     <header className="bg-white shadow-sm fixed top-0 left-20 w-full z-10">
       <div className="flex justify-between items-center p-6">
         <h1

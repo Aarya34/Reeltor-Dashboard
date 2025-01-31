@@ -7,11 +7,14 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom'; // Import BrowserRouter
 import { createBrowserRouter, RouterProvider, Route, createRoutesFromElements } from 'react-router-dom'; 
 import DashboardScreen from './screens/DashboardScreen';
+import PropertyListingsScreen from './screens/PropertyListingsScreen.jsx';
 import store from './store';
 const routes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="/Dashboard" element={<DashboardScreen />} />
+      <Route path="/PropertyListings" element={<PropertyListingsScreen />} />
+
     </Route>
   )
 )

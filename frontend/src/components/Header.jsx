@@ -1,5 +1,5 @@
-import React from 'react'
-import { Bell } from 'lucide-react'; 
+import React from 'react';
+import { Bell } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -19,18 +19,18 @@ const Header = () => {
         >
           Dashboard
         </h1>
-        
+
         <div className="flex items-center space-x-4 ml-auto">
-        <button className="p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100 flex items-center justify-center relative right-50">
-  <Bell size={24} className="text-black" />
-</button>
-  <span className="text-sm text-gray-600 font-normal relative right-45">Aarya Chepuri</span>
-</div>
-
-
+          <button className="p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100 flex items-center justify-center relative right-45">
+            <Bell size={24} className="text-black" />
+          </button>
+          <span className="text-sm text-gray-600 font-normal hidden sm:inline-block relative right-45">
+            Aarya Chepuri
+          </span>
+        </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
